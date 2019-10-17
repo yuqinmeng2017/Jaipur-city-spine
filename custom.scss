@@ -1,0 +1,17 @@
+/* Custom.scss */
+/* Bootstrap variable overrides */
+
+	/* Overall Colors */
+	$primary: #FFC107;
+@import url('https://fonts.googleapis.com/css?family=Long+Cang&display=swap');
+
+/* Header Fonts */
+$headings-font-family:'Long Cang', cursive;
+
+/* Body Fonts */
+$font-family-base: 'Lato', sans-serif;
+
+/* Background Color */
+$body-bg: #1261A0;
+
+@import "bootstrap-4.0.0/scss/bootstrap";
