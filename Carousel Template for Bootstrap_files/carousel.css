@@ -18,6 +18,10 @@ body {
    background-color: #6E8F60;
 }
 
+#map {
+  height: 400px;
+  width:400px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
