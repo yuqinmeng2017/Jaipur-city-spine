@@ -16,11 +16,12 @@ body {
 .marketing .btn
 {
    background-color: #6E8F60;
+   border-color: #6E8F60;
 }
 
 #map {
-  height: 400px;
-  width:400px;
+  height: 800px;
+  width:1200px;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -49,7 +50,7 @@ body {
 }
 
 
-
+https://i.imgur.com/PCZKsDU.jpg
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -59,7 +60,7 @@ body {
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 400;
+  font-weight: 300;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
@@ -68,7 +69,7 @@ body {
 }
 
 .marketing .col-lg-4 h3 {
-  
+  margin-top: 1.5rem
   font-family: 'Jomolhari', serif;
   color: #477030;
 }
@@ -82,7 +83,8 @@ body {
 }
 
 /* Thin out the marketing headings */
-.featurette-heading h2 {
+.featurette .col-md-7 h2 {
+
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
@@ -90,7 +92,11 @@ body {
   color: #477030;
 }
 
-
+.featurette .col-md-7 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+  font-family: 'Patrick Hand', cursive;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -104,7 +110,7 @@ body {
   }
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 
