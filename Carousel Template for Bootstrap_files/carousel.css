@@ -50,17 +50,18 @@ body {
 }
 
 
-https://i.imgur.com/PCZKsDU.jpg
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+  margin-top:1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 300;
+  font-weight: 400;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
@@ -69,7 +70,6 @@ https://i.imgur.com/PCZKsDU.jpg
 }
 
 .marketing .col-lg-4 h3 {
-  margin-top: 1.5rem
   font-family: 'Jomolhari', serif;
   color: #477030;
 }
@@ -97,6 +97,8 @@ https://i.imgur.com/PCZKsDU.jpg
   margin-left: .75rem;
   font-family: 'Patrick Hand', cursive;
 }
+
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
