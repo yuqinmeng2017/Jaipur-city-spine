@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Link to JQuery library (used for modal) -->  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,7 +17,7 @@
 
     <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>New city spine of Jaipur</title>
+    <title>Explore Jaipur</title>
 
     
      <link rel="stylesheet" type="text/css" href="custom.css"/>
@@ -30,7 +34,7 @@
   
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="file:///Users/qinmengyu/Documents/GitHub/Jaipur-city-spine/index.html">JAIPUR CITY SPINE</a>
+        <a class="navbar-brand" href="file:///Users/qinmengyu/Documents/GitHub/Jaipur-city-spine/index.html">EXPLORE JAIPUR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,7 +47,7 @@
               <a class="nav-link" href="file:///Users/qinmengyu/Documents/GitHub/Jaipur-city-spine/index.html">Project narrative</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="file:///Users/qinmengyu/Documents/GitHub/Jaipur-city-spine/index.html">Map</a>
+              <a class="nav-link" href="https://yuqinmeng2017.github.io/JAIPUR-MAP/">Map</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -95,7 +99,7 @@
         </div><!-- /.row -->
 
 
-        <!-- START THE FEATURETTES -->
+        <!-- START THE FEATURETTES NATIVE PLANT ANALYSIS PLANTS-->
 
         <hr class="featurette-divider">
 
@@ -109,17 +113,75 @@
           </div>
         </div>
 
+
+    <!-- START THE FEATURETTES ADD MAPS-->
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-8 order-md-3">
-            <h2 class="featurette-heading">WATER SUPPLY SYSTEM</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <div id="map"></div>
+          
+  <!-- Map sidebar --> 
+           <div id="sidebar">
+           <div>
+          <h2 class='page-title'>WATER SUPPLY SYSTEM</h2>
+         <!-- About this map button -->
+         <button id="about" class="btn btn-secondary"><i class="fas fa-question-circle"></i>&nbsp;About this map</button>
+         <!-- Info window (populated by javascript code from the Mapbox map layers) -->
+         <div id='info-window'>
+           <div>
+          <div id='info-window-body'>
+            <p>Hover over a park or click on a bus stop to learn more about it.</p>
           </div>
         </div>
+      </div>
+      <!-- Scrolling chapters (populated by javascript code from the Mapbox map layers) -->
+      <div id="chapters"></div>
+    </div>
+  </div>
+
+<!-- The map will be added to this div by javascript --> 
+   <div id="map-parent">
+    <div id="map"></div>
+
+    <!-- Map overlay sidebar -->
+    <div id='map-sidebar'>
+      <!-- Layers control (populated by javascript code) -->
+      <div id='layers-control'>
+        <h4>Show/Hide Layers:</h4>
+      </div>
+
+      <!-- color change selector -->
+      <div id='color-changer'>
+        <div>
+          <label>Bus Stop Color:</label>
+          <div id='swatches'></div>
+        </div>
+      </div>
+
+      <!-- Map legend (populated by javascript code) -->
+      <div id='legend'></div>
+
+      <!-- Reset Map button -->
+      <button id="reset" class="btn btn-secondary"><i class="fas fa-redo"></i></i>&nbsp;Reset map</button>
+    </div>
+  </div>
+
+  <!-- A modal, hidden by default in our css, which provides info about this project when shown -->
+  <div class='modal'>
+    
+    <h2 class='modal-title'>About this project</h2>
+    
+    <div class='modal-body'><p>This is an example map of Charlottesville created in the Scripting Civic Engagement seminar at the University of Virginia (Fall 2017), taught by Andrea Hansen Phillips.</p><p>Map data courtesy of <a href='https://www.mapbox.com/studio/'>Mapbox Studio</a> and the <a href='http://www.charlottesville.org/online-services/maps-and-gis-data'>City of Charlottesville</a></p><p>For questions or to improve this map, contact <a href='mailto:ah2th@virginia.edu'>Andrea Hansen Phillips</a></p></div>
+    
+    <button class='close-button'>&times;</button>  <!-- A special "x" character (the multiply sign) used in close buttons -->  
+  </div>
+  <div id="screen"></div> <!-- Black overlay behind the modal -->
+       
+        </div>
+
+
+
+ <!-- START THE FEATURETTES ADD LAST PORTION-->
+
 
         <hr class="featurette-divider">
 
