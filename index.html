@@ -4,7 +4,8 @@
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Link to JQuery library (used for modal) -->  
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -106,7 +107,7 @@
         <div class="row featurette">
           <div class="col-md-5">
             <h2 class="featurette-heading">NATIVE PLANT ANALYSIS</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Due to Jaipur’s variable climate, most plant species are tolerant of drought conditions and wide range of temperatures. Some trees have religious significance, such as the peepal and khejri trees. Khejri is the state tree of Rajasthan.</p>
           </div>
           <div class="col-md-5">
             <img alt="Generic placeholder image" width="750" height="600" src="https://i.imgur.com/PCZKsDU.jpg">
@@ -120,86 +121,32 @@
         <div class="row featurette">
           
   <!-- Map sidebar --> 
-           <div id="sidebar">
-           <div>
-          <h2 class='page-title'>WATER SUPPLY SYSTEM</h2>
-         <!-- About this map button -->
-         <button id="about" class="btn btn-secondary"><i class="fas fa-question-circle"></i>&nbsp;About this map</button>
-         <!-- Info window (populated by javascript code from the Mapbox map layers) -->
-         <div id='info-window'>
-           <div>
-          <div id='info-window-body'>
-            <p>Hover over a park or click on a bus stop to learn more about it.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Scrolling chapters (populated by javascript code from the Mapbox map layers) -->
-      <div id="chapters"></div>
+   <div class="col-md-8 order-md-3">
+            <h2 class="featurette-heading">WATER SUPPLY SYSTEM</h2>
+            <p class="lead">Water is one of the most precious rescources of Jaipur. This map shows the water transfer pipe system, water tank locations, pump locations and STP(sewage treatment plant)locations.  </p>
+          
+        
     </div>
   </div>
 
 <!-- The map will be added to this div by javascript --> 
-   <div id="map-parent">
+   <div class="col-md-5">
     <div id="map"></div>
 
     <!-- Map overlay sidebar -->
-    <div id='map-sidebar'>
-      <!-- Layers control (populated by javascript code) -->
-      <div id='layers-control'>
-        <h4>Show/Hide Layers:</h4>
-      </div>
-
-      <!-- color change selector -->
-      <div id='color-changer'>
-        <div>
-          <label>Bus Stop Color:</label>
-          <div id='swatches'></div>
-        </div>
-      </div>
-
-      <!-- Map legend (populated by javascript code) -->
-      <div id='legend'></div>
-
+   
       <!-- Reset Map button -->
-      <button id="reset" class="btn btn-secondary"><i class="fas fa-redo"></i></i>&nbsp;Reset map</button>
+
     </div>
   </div>
 
   <!-- A modal, hidden by default in our css, which provides info about this project when shown -->
-  <div class='modal'>
-    
-    <h2 class='modal-title'>About this project</h2>
-    
-    <div class='modal-body'><p>This is an example map of Charlottesville created in the Scripting Civic Engagement seminar at the University of Virginia (Fall 2017), taught by Andrea Hansen Phillips.</p><p>Map data courtesy of <a href='https://www.mapbox.com/studio/'>Mapbox Studio</a> and the <a href='http://www.charlottesville.org/online-services/maps-and-gis-data'>City of Charlottesville</a></p><p>For questions or to improve this map, contact <a href='mailto:ah2th@virginia.edu'>Andrea Hansen Phillips</a></p></div>
-    
-    <button class='close-button'>&times;</button>  <!-- A special "x" character (the multiply sign) used in close buttons -->  
-  </div>
-  <div id="screen"></div> <!-- Black overlay behind the modal -->
-       
-        </div>
-
+  
 
 
  <!-- START THE FEATURETTES ADD LAST PORTION-->
 
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">TRANSPORTATION SPINE</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16d8c78d0b3%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16d8c78d0b3%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.1171875%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 500px; height: 500px;">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-      </div><!-- /.container -->
 
 
       <!-- FOOTER -->
